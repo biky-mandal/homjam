@@ -1,0 +1,126 @@
+.homePage_main_div{
+    width: 100%;
+    height: 400vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0A0B1A;
+}
+.home_page_top_div{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../images/1.jpg');
+    background-size: cover;
+}
+.home_page_top_div img{
+    height: auto;
+    width: 100%;
+}
+
+.overlay_div{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(5, 11, 20, 0.28) 0%, rgba(1, 13, 32, 0.69) 67.53%, #0A0B1A 85.33%);
+}
+
+.upcoming_shows_div{
+    width: 80%;
+    height: 70vh;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.upcoming_shows_div_top{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.upcoming_shows_div_bottom{
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    justify-content: space-between  ;
+    z-index: 0;
+}
+.h_lbl{
+    font-family: fantasy;
+    color: #fff;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+}
+.viewall_btn{
+    color: #E5C558;
+}
+
+.card{
+    width: 22%;
+    height: 100%;
+    background-color: #111229;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.card::after{
+    position: absolute;
+    left: 2.99%;
+    right: -2.99%;
+    top: -2.07%;
+    bottom: 2.07%;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(163.41deg, #301A68 0.11%, #234C97 170.69%);
+    border-radius: 8px;
+    z-index: -1;
+}
+.card_top{
+    width: 100%;
+    height: 60%;
+    background-color: blueviolet;
+}
+.card_bottom{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 1rem;
+}
+
+.gnre-div label{
+    background-color: #E5C558;
+    padding:1px 5px;
+    color: #682F26;
+    font-size: 12px;
+}
+.name_div{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+.link_bottm-div{
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+.left_link_div{
+    color: #0259EB;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.right_icon_div{
+    color: #682F26;
+    border-left: 1px solid rgba(255, 255, 255, 0.199);
+    padding-left: 2rem;
+}
