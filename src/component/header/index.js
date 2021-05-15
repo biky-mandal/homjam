@@ -17,13 +17,13 @@ const Header = (props) => {
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ml-auto">
                     <li className="nav-item">
-                        <NavLink to="" className="nav-link link2 navtags" ><span><FiSearch/></span>Search</NavLink>
-                    </li>
-                    <li className="nav-item">
                         <NavLink to="" className="nav-link link2 navtags" >Help</NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink to="" className="nav-link link2 navtags" >Account</NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink to="" className="nav-link link2 navtags" >Login</NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink to="" className="nav-link link2 navtags" ><FiShoppingBag/></NavLink>
