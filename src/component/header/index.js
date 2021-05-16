@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 import {Navbar, Nav, NavLink} from 'react-bootstrap';
-import {FiSearch, FiShoppingBag} from 'react-icons/fi';
+import { FiShoppingBag} from 'react-icons/fi';
 import logo from '../../images/homejam_logo.png';
 
 /**
@@ -13,7 +13,7 @@ const Header = (props) => {
   return(
     <div className="header">
         <Navbar className="navbar-bg" collapseOnSelect expand="md" variant="dark">
-            <Navbar.Brand href="/" className="navlogo"><img src={logo}/></Navbar.Brand>
+            <Navbar.Brand href="/" className="navlogo"><img src={logo} alt="logo"/></Navbar.Brand>
             <Navbar.Toggle className="custom-toggler" aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ml-auto">

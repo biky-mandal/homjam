@@ -1,290 +1,148 @@
 
-
-.homePage_main_div{
-    width: 100%;
-    height: 300vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #0A0B1A;
-}
-.home_page_top_div{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-image: url('../../images/background.jpg');
-    background-size: cover;
-}
-.home_page_top_div img{
-    height: auto;
-    width: 100%;
-}
-
-.overlay_div{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding-left: 10%;
-    background: linear-gradient(180deg, rgba(5, 11, 20, 0.28) 0%, rgba(1, 13, 32, 0.69) 67.53%, #0A0B1A 85.33%);
-}
-
-.overlay_div_top{
-    width: 100%;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.half_circle{
-    position: absolute;
-    width: 208px;
-    height: 208px;
-    border-radius: 50%;
-    border-right: 1px solid #eb02df;
-    border-bottom: 1px solid #eb02df;
-    border-left: none;
-    border-top: none;
-}
-.circles span{
-    color: #fff;
-    font-size: 24px;
-}
-.logo_circles{
-    font-size: 32px;
-    color: blue;
-}
-
-.logo_circle{
-    font-size: 32px;
-    color: rgba(255, 255, 255, 0.767);
-}
-.label_circles{
-    color: rgba(255, 255, 255, 0.452);
-    font-size: 18px;
-    margin-top: 6px;
-}
-.overlay_head{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 80px;
-    color: #fff;
-}
-
-/* This Css Section Is For Upcoming shows Div */
-
-.upcoming_shows_div{
-    width: 80%;
-    height: 70vh;
-    margin-top: 20vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.upcoming_shows_div_top{
-    width: 100%;
-    height: 15vh;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.h_lbl{
-    font-family: fantasy;
-    color: #fff;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 40px;
-}
-.viewall_btn{
-    color: #E5C558;
-}
-
-
-.card_top{
-    width: 100%;
-    height: 60%;
-    border-radius: 8px 8px 0 0;
-}
-.card_top img{
-    height: 100%;
-    width: 100%;
-    left: 0px;
-    top: 0px;
-    border-radius: 8px 8px 0 0;
-    background-size: cover;
-    opacity: 70%;
-}
-.card_bottom{
-    width: 100%;
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem 1rem;
-}
-
-.gnre-div label{
-    background-color: #E5C558;
-    padding:1px 5px;
-    color: #682F26;
-    font-size: 12px;
-}
-.name_div{
-    font-size: 20px;
-    font-weight: bold;
-    color: #fff;
-}
-.link_bottm-div{
-    display: flex;
-    width: 100%;
-    margin-top: 1rem;
-    justify-content: space-between;
-}
-.left_link_div{
-    color: #0259EB;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 300;
-    letter-spacing: 1px;
-}
-.right_icon_div{
-    color: #682F26;
-    border-left: 1px solid rgba(255, 255, 255, 0.199);
-    padding-left: 2rem;
-}
-
-/* For Reviews Div */
-
-.reviews_div{
-    width: 80%;
-    height: 50vh;
-    margin-top: 20vh;
-    display: flex;
-    flex-direction: column;
-}
-.reviews_div_top{
-    width: 100%;
-    height: 15vh;
-}
-
-.card_review::after{
-    position: absolute;
-    left: 2.17%;
-    right: 0%;
-    top: -3%;
-    bottom: 3.12%;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(143.63deg, #276C73 5.43%, #5293E8 110.6%);
-    border-radius: 16px;
-    z-index: -1;
-}
-
-.slide_number_div{
-    display: flex;
-}
-.number_label{
-    margin-left: 1rem;
-    font-size: 16px;
-    line-height: 24px;
-    color: #fff;
-}
-.slide_icons{
-    margin-left: 1rem;
-    font-size: 16px;
-    line-height: 24px;
-    color: #fff;
-}
-.slide_icons span{
-    padding-left: 1rem;
-    font-size: 16px;
-}
-.total_page_in_slide{
-    opacity: 50%;
-}
-
-.upper_div_review{
-    display: flex;
-}
-.left_upper_div_review{
-    width: 48px;
-    height: 48px;
-    background-color: #E5C558;
-    border-radius: 50%;
-}
-.right_upper_div_review{
-    display: flex;
-    flex-direction: column;
-    margin-left: 1rem;
-}
-.right_upper_div_review_head{
-    color: #fff;
-}
-
-.right_upper_div_review_body{
-    color: #E5C558;
-    font-size: 11px;
-}
-
-.right_upper_div_review_body span{
-    color: blueviolet;    
-    margin-right: 1rem;
-    font-size: 20px;
-}
-
-.bottom_div_review{
-    margin-top: 3vh;
-    color: #fff;
-    opacity: 90%;
-    letter-spacing: 0.5px;
-}
-
-
-
 /* FOr Mobile */
 @media screen and (max-width: 480px) {
-        
-    .overlay_description{
-        font-size: 22px;
-        font-weight: 300;
-        color: rgba(255, 255, 255, 0.692);
-        padding-right: 20vw;
+    .homePage_main_div{
+        width: 100vw;
+        height: 230vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #0A0B1A;
+    }
+    .home_page_top_div{
+        position: relative;
+        width: 100vw;
+        height: 90vh;
+        background-image: url('../../images/background.jpg');
+        background-size: cover;
+        background-position: right;
+    }
+    .home_page_top_div img{
+        height: auto;
+        width: 90vw;
+    }
+    
+    .overlay_div{
+        position: absolute;
+        width: 100vw;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        padding-left: 2%;
+        background: linear-gradient(180deg, rgba(5, 11, 20, 0.28) 0%, rgba(1, 13, 32, 0.69) 67.53%, #0A0B1A 85.33%);
+    }
+    
+    .overlay_div_top{
+        width: 100vw;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .overlay_div_bottom{
-        display: flex;
         width: 90%;
         height: 30%;
+        display: flex;
+        justify-content: space-between;
         overflow-x: auto;
     }
     .circles{
         position: relative;
-        min-width: 208px;
-        height: 208px;
+        min-width: 150px;
+        height: 150px;
         border: 1px solid rgba(255, 255, 255, 0.281);
         border-radius: 50%;
         display: flex;
         flex-direction: column;
+        margin-right: 5vw;
         justify-content: center;
         align-items: center;
     }
-    .upcoming_shows_div_bottom{
-        width: 100%;
-        height: 55vh;
-        display: flex;
-        z-index: 0;
-        overflow-x: auto;
+    .half_circle{
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border-right: 1px solid #eb02df;
+        border-bottom: 1px solid #eb02df;
+        border-left: none;
+        border-top: none;
     }
+    .circles span{
+        color: #fff;
+        font-size: 18px;
+    }
+    .logo_circles{
+        font-size: 24px;
+        color: blue;
+    }
+    
+    .logo_circle{
+        font-size: 24px;
+        color: rgba(255, 255, 255, 0.767);
+    }
+    .label_circles{
+        color: rgba(255, 255, 255, 0.452);
+        font-size: 16px;
+        margin-top: 6px;
+    }
+    .overlay_head{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 50px;
+        color: #fff;
+    }
+    
+    .overlay_description{
+        font-size: 18px;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.692);
+        padding-right: 20vw;
+    }
+    /* This Css Section Is For Upcoming shows Div */
+    
+    .upcoming_shows_div{
+        width: 96%;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .upcoming_shows_div_top{
+        width: 90vw;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .upcoming_shows_div_bottom{
+        width: 90vw;
+        height: 40vh;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between  ;
+        z-index: 0;
+        overflow: auto;
+    }
+    .h_lbl{
+        font-family: fantasy;
+        color: #fff;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .viewall_btn{
+        color: #E5C558;
+    }
+    
     .card{
-        min-width: 100%;
+        min-width: 60%;
         height: 100%;
         background-color: #111229;
         box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
         border-radius: 8px;
         display: flex;
+        margin-right: 1rem;
         flex-direction: column;
     }
     .card::after{
@@ -300,35 +158,207 @@
         border-radius: 8px;
         z-index: -1;
     }
-    .reviews_div_bottm{
+    .card_top{
         width: 100%;
-        height: 35vh;
+        height: 60%;
+        border-radius: 8px 8px 0 0;
+    }
+    .card_top img{
+        height: 100%;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        border-radius: 8px 8px 0 0;
+        background-size: cover;
+        opacity: 70%;
+    }
+    .card_bottom{
+        width: 100%;
+        height: 40%;
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem 1rem;
+    }
+    
+    .gnre-div label{
+        background-color: #E5C558;
+        padding:1px 5px;
+        color: #682F26;
+        font-size: 12px;
+    }
+    .name_div{
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+    }
+    .link_bottm-div{
+        display: flex;
+        width: 100%;
+        margin-top: 1rem;
+        justify-content: space-between;
+    }
+    .left_link_div{
+        color: #0259EB;
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    .right_icon_div{
+        color: #682F26;
+        border-left: 1px solid rgba(255, 255, 255, 0.199);
+        padding-left: 2rem;
+    }
+    
+    /* For Reviews Div */
+    
+    .reviews_div{
+        width: 96vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .reviews_div_top{
+        width: 100vw;
+        height: 10vh;
+    }
+    .reviews_div_bottm{
+        width: 90vw;
+        height: 30vh;
+        display: flex;
+        justify-content: space-between;
         z-index: 0;
-        overflow-x: auto;
+        padding: 10px 0;
+        overflow: auto;
     }
     
     .card_review{
-        min-width: 30%;
+        min-width: 90%;
         position: relative;
+        margin-right: 20px;
         height: 100%;
         border-radius: 16px;
         border: 2px solid #E5C558;
         display: flex;
         background-color: #0A0B1A;
         flex-direction: column;
-        padding: 2rem 1.3rem;
+        padding: 1rem 1.3rem;
     }
+    .card_review::after{
+        position: absolute;
+        left: 2.17%;
+        right: 0%;
+        top: -3%;
+        bottom: 3.12%;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(143.63deg, #276C73 5.43%, #5293E8 110.6%);
+        border-radius: 16px;
+        z-index: -1;
+    }
+    
+    .slide_number_div{
+        display: flex;
+    }
+    .number_label{
+        margin-left: 1rem;
+        font-size: 16px;
+        line-height: 24px;
+        color: #fff;
+    }
+    .slide_icons{
+        margin-left: 1rem;
+        font-size: 16px;
+        line-height: 24px;
+        color: #fff;
+    }
+    .slide_icons span{
+        padding-left: 1rem;
+        font-size: 16px;
+    }
+    .total_page_in_slide{
+        opacity: 50%;
+    }
+    
+    .upper_div_review{
+        display: flex;
+    }
+    .left_upper_div_review{
+        width: 48px;
+        height: 48px;
+        background-color: #E5C558;
+        border-radius: 50%;
+    }
+    .right_upper_div_review{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+    .right_upper_div_review_head{
+        color: #fff;
+    }
+    
+    .right_upper_div_review_body{
+        color: #E5C558;
+        font-size: 11px;
+    }
+    
+    .right_upper_div_review_body span{
+        color: blueviolet;    
+        margin-right: 1rem;
+        font-size: 20px;
+    }
+    
+    .bottom_div_review{
+        color: #fff;
+        opacity: 90%;
+        letter-spacing: 0.5px;
+    }
+    
 }
 
 
-/* For Screen resoulution Greater than Mobile */
+/* For Screen resoulution Greater than 480 */
 @media screen and (min-width: 480px) {
-    .overlay_description{
-        font-size: 22px;
-        font-weight: 300;
-        color: rgba(255, 255, 255, 0.692);
-        padding-right: 50vw;
+    .homePage_main_div{
+        width: 100%;
+        height: 300vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #0A0B1A;
+    }
+    .home_page_top_div{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-image: url('../../images/background.jpg');
+        background-size: cover;
+    }
+    .home_page_top_div img{
+        height: auto;
+        width: 100%;
+    }
+    
+    .overlay_div{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding-left: 10%;
+        background: linear-gradient(180deg, rgba(5, 11, 20, 0.28) 0%, rgba(1, 13, 32, 0.69) 67.53%, #0A0B1A 85.33%);
+    }
+    
+    .overlay_div_top{
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .overlay_div_bottom{
         width: 90%;
@@ -336,8 +366,6 @@
         display: flex;
         justify-content: space-between;
     }
-
-
     .circles{
         position: relative;
         width: 208px;
@@ -349,6 +377,63 @@
         justify-content: center;
         align-items: center;
     }
+    .half_circle{
+        position: absolute;
+        width: 208px;
+        height: 208px;
+        border-radius: 50%;
+        border-right: 1px solid #eb02df;
+        border-bottom: 1px solid #eb02df;
+        border-left: none;
+        border-top: none;
+    }
+    .circles span{
+        color: #fff;
+        font-size: 24px;
+    }
+    .logo_circles{
+        font-size: 32px;
+        color: blue;
+    }
+    
+    .logo_circle{
+        font-size: 32px;
+        color: rgba(255, 255, 255, 0.767);
+    }
+    .label_circles{
+        color: rgba(255, 255, 255, 0.452);
+        font-size: 18px;
+        margin-top: 6px;
+    }
+    .overlay_head{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 80px;
+        color: #fff;
+    }
+    
+    .overlay_description{
+        font-size: 22px;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.692);
+        padding-right: 50vw;
+    }
+    /* This Css Section Is For Upcoming shows Div */
+    
+    .upcoming_shows_div{
+        width: 80%;
+        height: 70vh;
+        margin-top: 20vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .upcoming_shows_div_top{
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        justify-content: space-between;
+    }
+    
     .upcoming_shows_div_bottom{
         width: 100%;
         height: 55vh;
@@ -356,6 +441,17 @@
         justify-content: space-between  ;
         z-index: 0;
     }
+    .h_lbl{
+        font-family: fantasy;
+        color: #fff;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .viewall_btn{
+        color: #E5C558;
+    }
+    
     .card{
         width: 22%;
         height: 100%;
@@ -378,6 +474,72 @@
         border-radius: 8px;
         z-index: -1;
     }
+    .card_top{
+        width: 100%;
+        height: 60%;
+        border-radius: 8px 8px 0 0;
+    }
+    .card_top img{
+        height: 100%;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        border-radius: 8px 8px 0 0;
+        background-size: cover;
+        opacity: 70%;
+    }
+    .card_bottom{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem 1rem;
+    }
+    
+    .gnre-div label{
+        background-color: #E5C558;
+        padding:1px 5px;
+        color: #682F26;
+        font-size: 12px;
+    }
+    .name_div{
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+    }
+    .link_bottm-div{
+        display: flex;
+        width: 100%;
+        margin-top: 1rem;
+        justify-content: space-between;
+    }
+    .left_link_div{
+        color: #0259EB;
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    .right_icon_div{
+        color: #682F26;
+        border-left: 1px solid rgba(255, 255, 255, 0.199);
+        padding-left: 2rem;
+    }
+    
+    /* For Reviews Div */
+    
+    .reviews_div{
+        width: 80%;
+        height: 50vh;
+        margin-top: 20vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .reviews_div_top{
+        width: 100%;
+        height: 15vh;
+    }
     .reviews_div_bottm{
         width: 100%;
         height: 35vh;
@@ -397,4 +559,78 @@
         flex-direction: column;
         padding: 2rem 1.3rem;
     }
+    .card_review::after{
+        position: absolute;
+        left: 2.17%;
+        right: 0%;
+        top: -3%;
+        bottom: 3.12%;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(143.63deg, #276C73 5.43%, #5293E8 110.6%);
+        border-radius: 16px;
+        z-index: -1;
+    }
+    
+    .slide_number_div{
+        display: flex;
+    }
+    .number_label{
+        margin-left: 1rem;
+        font-size: 16px;
+        line-height: 24px;
+        color: #fff;
+    }
+    .slide_icons{
+        margin-left: 1rem;
+        font-size: 16px;
+        line-height: 24px;
+        color: #fff;
+    }
+    .slide_icons span{
+        padding-left: 1rem;
+        font-size: 16px;
+    }
+    .total_page_in_slide{
+        opacity: 50%;
+    }
+    
+    .upper_div_review{
+        display: flex;
+    }
+    .left_upper_div_review{
+        width: 48px;
+        height: 48px;
+        background-color: #E5C558;
+        border-radius: 50%;
+    }
+    .right_upper_div_review{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+    .right_upper_div_review_head{
+        color: #fff;
+    }
+    
+    .right_upper_div_review_body{
+        color: #E5C558;
+        font-size: 11px;
+    }
+    
+    .right_upper_div_review_body span{
+        color: blueviolet;    
+        margin-right: 1rem;
+        font-size: 20px;
+    }
+    
+    .bottom_div_review{
+        margin-top: 3vh;
+        color: #fff;
+        opacity: 90%;
+        letter-spacing: 0.5px;
+    }
+    
 }
+
