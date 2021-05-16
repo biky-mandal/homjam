@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 import Layout from '../../component/layout';
 import { NavLink } from 'react-bootstrap';
-import {FiArrowRight, FiCalendar, FiArrowLeft} from 'react-icons/fi';
+import {FiArrowRight, FiCalendar, FiArrowLeft, FiHeart} from 'react-icons/fi';
 import {GiUsaFlag} from 'react-icons/gi';
 import a from '../../images/andrea.jpg';
 import b from '../../images/Benny.jpg';
@@ -21,7 +21,37 @@ const Homepage = (props) => {
 
           <div className="home_page_top_div">
             <div className="overlay_div">
+              <div className="overlay_div_top">
+                <label className="overlay_head">Cari Cari</label>
+                <label className="overlay_description">
+                  Live from their sofa to yours. Get closer to your favorite artists, and never miss out.
+                </label>
+              </div>
+              <div className="overlay_div_bottom">
+                <div className="circles">
+                  <span className="half_circle">
 
+                  </span>
+                  <label className="logo_circles"><FiHeart/></label>
+                  <span>0</span>
+                  <label className="label_circles">Label</label>
+                </div>
+                <div className="circles">
+                  <label className="logo_circle"><FiCalendar/></label>
+                  <span>0</span>
+                  <label className="label_circles">Label</label>
+                </div>
+                <div className="circles">
+                  <label className="logo_circle"><FiCalendar/></label>
+                  <span>0</span>
+                  <label className="label_circles">Label</label>
+                </div>
+                <div className="circles">
+                  <label className="logo_circle"><FiCalendar/></label>
+                  <span>0</span>
+                  <label className="label_circles">Label</label>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -133,7 +163,7 @@ const Homepage = (props) => {
                         
                       </div>
                       <div className="right_upper_div_review">
-                        <label className="right_upper_div_review_head">Isaac Oluwatemilorun</label>
+                        <label className="right_upper_div_review_head">Hellen Jummy</label>
                         <label className="right_upper_div_review_body"><span><GiUsaFlag/></span>PALO ALTO, CA</label>
                       </div>
                     </div>
@@ -169,7 +199,7 @@ const Homepage = (props) => {
                         
                       </div>
                       <div className="right_upper_div_review">
-                        <label className="right_upper_div_review_head">Isaac Oluwatemilorun</label>
+                        <label className="right_upper_div_review_head">Hellen Jummy</label>
                         <label className="right_upper_div_review_body"><span><GiUsaFlag/></span>PALO ALTO, CA</label>
                       </div>
                     </div>
